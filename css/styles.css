@@ -1,0 +1,255 @@
+/* Global Styles
+-----------------------------------*/
+body{
+    color: #343434; /*lighter dark*/
+    margin: 0; /*to remove spacing to the left and right of the divs*/
+    padding: 0; /*common convention, to reset body styling*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+img {
+  width: 300px;
+}
+a{
+    color: #111111;
+}
+a:hover
+{
+    text-decoration: none;
+}
+h2{
+    margin: 0;/*to remove extra space the h2 margin has*/
+    font: 45px;
+}
+h1{
+    font-size: 80px;
+}
+h1,h2{
+    font-family: 'Bebas';
+    font-weight: 400;
+    margin: 0; /*to more h1 and h2 closer together horizontally*/
+}
+.content-wrap{
+    max-width: 800px; /*having width only, crops the site if u adjust the width of the browser, maxwidth makes it adjust*/
+    width: 85%; /*if the browser gets too small, this makes sure there is still space*/
+    margin: 0 auto;
+    padding: 60px 0; /*adds padding to the top and bottom of the div containers to eliminate white space in between*/
+}
+h3{
+    margin-bottom: 0;
+}
+.item-details h3 + p{ /*modifies paragraphs IMMEDIATELY preceding h3's*/
+    font-style: italic;
+}
+.bigger h2{
+    font-size: 45px;
+}
+
+.item-details h3 ~ p{ /*all the paragraphs after h3*/
+    margin: 0;
+}
+
+.test{
+   margin: 0px;
+}
+
+.divider > section{
+    border-bottom: 1px dashed #343434; /*adds dashlines in between projects*/
+    padding: 25px 0; /*adds space between projects and the dash lines*/
+}
+
+.divider > section:last-of-type{
+    border-bottom: none;
+}
+/* Profile
+-----------------------------------*/
+header {
+    background: #111111;
+    color: #fff;
+
+}
+/* Courses/Certification
+-----------------------------------*/
+.courses{
+    background: #ffffff;
+}
+.courses a{
+    color: #111111;
+}
+.courses .btn{
+    color: #ffffff;
+    background: #111111;
+    text-decoration: none; /*removes underline*/
+    padding: 8px;
+    border-radius: 4px; /*makes button round */
+    display: inline-block; /*to not overlap on other margin spaces*/
+}
+
+.courses .btn:hover{
+    background: rgba(255, 255, 255, 1); /*used rgb to be able to modify opacity in 4th argument*/
+}
+.item-details a{
+    transition: ease-out 0.3s;
+    box-shadow: inset 0 0 0 0 #F7FFF7;
+}
+
+.item-details a:hover{
+    box-shadow: inset 158px 0 0 0 #F7FFF7;
+    cursor: pointer;
+    color: #111111;
+}
+
+
+/* Work Experience
+-----------------------------------*/
+.work-experience{
+    background: #111111;
+}
+
+.work-experience a, .work-experience{
+    color: #ffffff;
+}
+
+
+
+/* Education
+-----------------------------------*/
+.education{
+    background: #ffffff;
+    padding-bottom: 80px;
+}
+
+.education p{
+    width: 60%;
+}
+/* Contact Info
+-----------------------------------*/ 
+footer{
+    background: #111111 ;
+    color: #ffffff;
+}
+
+footer a{
+    color: #ffffff;
+}
+
+footer h2 {
+    font-size: 65px;
+}
+
+
+.contact-list a .btntxt {
+    position: relative;
+    z-index: 10; /*makes sure the icones dont get covered by the gradient*/
+    transition: color 0.5s;
+}
+
+
+.contact-list {
+    list-style-type: none; /*to remove bullets in the list of contact info*/
+    padding: 0;
+    margin: 10px;
+}
+
+.contact-list a{
+    padding: 15px 25px; /*makes it more accessible as there is now more area to click on the links, is the visible white circle*/
+    display: inline-block; /*links are inline elements and we want them to adjust vertically and horizontally*/
+    font-size: 35px; /*adjusts icon size*/
+    color: #111111;
+    background-color: #fff;
+    margin: 0 30px; /*in between spacing*/
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden; /*puts color gradient inside the circle*/
+    transition: transform 0.5s;
+}
+
+.contact-list a .fa-brands, .contact-list a .fa-solid {
+    position: relative;
+    z-index: 10; /*makes sure the icones dont get covered by the gradient*/
+    transition: color 0.5s;
+}
+
+.contact-list a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg, #ed1c94, #ffec17);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.contact-list a:hover::after{
+    top: 0;
+}
+
+.contact-list a:hover .fa-brands, .contact-list a:hover .fa-solid{
+    color: #fff;
+}
+
+.contact-list a:hover{
+    transform: translateY(-10px);
+}
+
+/* Hidden Animations
+-----------------------------------*/
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+
+.btn{
+    transition-delay: 200ms;
+}
+
+.contact-list:nth-child(3){
+    transition-delay: 400ms;
+}
+/* Responsive
+-----------------------------------*/ 
+@media screen and (min-width:750px){ /*for 750 px screens and above*/
+    header,footer{
+        text-align: center;
+    }
+    .project-item img{ 
+        float: left;
+        margin-right: 20px; /*adds space to the right of the picture*/
+    }
+
+    .job-item{ /*grid container*/
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+    }
+    .contact-list{
+        display: flex;
+        justify-content:center;
+    }
+}
+
+@media screen and (max-width:749px){
+    h2,h1{
+        line-height: 1.2;
+    }
+
+    .contact-list a{
+        padding: 5px;
+    }
+  
+}
