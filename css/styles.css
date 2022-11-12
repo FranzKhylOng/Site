@@ -91,13 +91,26 @@ header {
 }
 .item-details a{
     transition: ease-out 0.3s;
-    box-shadow: inset 0 0 0 0 #F7FFF7;
+    box-shadow: inset 0 0 0 0 #ffffff;
 }
 
 .item-details a:hover{
-    box-shadow: inset 158px 0 0 0 #F7FFF7;
+    box-shadow: inset 158px 0 0 0 #ffffff;
     cursor: pointer;
     color: #111111;
+    background: rgba(255, 255, 255, 1);
+}
+
+.wlink{
+    transition: ease-out 0.3s;
+    box-shadow: inset 0 0 0 0 #111;
+}
+
+.wlink:hover{
+    box-shadow: inset 158px 0 0 0 #111;
+    cursor: pointer;
+    color: #fff;
+    background: rgb(1, 1, 1);
 }
 
 
