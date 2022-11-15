@@ -7,6 +7,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 1.5;
+    background-color: #F8F9FF;
 }
 img {
   width: 300px;
@@ -18,12 +19,15 @@ a:hover
 {
     text-decoration: none;
 }
+
 h2{
     margin: 0;/*to remove extra space the h2 margin has*/
     font: 45px;
+    color: #4120A9;
 }
 h1{
     font-size: 80px;
+
 }
 h1,h2{
     font-family: 'Bebas';
@@ -31,19 +35,24 @@ h1,h2{
     margin: 0; /*to more h1 and h2 closer together horizontally*/
 }
 .content-wrap{
-    max-width: 800px; /*having width only, crops the site if u adjust the width of the browser, maxwidth makes it adjust*/
+    max-width: 1000px; /*having width only, crops the site if u adjust the width of the browser, maxwidth makes it adjust*/
     width: 85%; /*if the browser gets too small, this makes sure there is still space*/
     margin: 0 auto;
-    padding: 60px 0; /*adds padding to the top and bottom of the div containers to eliminate white space in between*/
+    padding: 100px 0; /*adds padding to the top and bottom of the div containers to eliminate white space in between*/
 }
 h3{
     margin-bottom: 0;
+    color: #3C3B3B;
+    font-size: 30px;
+}
+p{
+    color: #343434;
 }
 .item-details h3 + p{ /*modifies paragraphs IMMEDIATELY preceding h3's*/
     font-style: italic;
 }
 .bigger h2{
-    font-size: 45px;
+    font-size: 60px;
 }
 
 .item-details h3 ~ p{ /*all the paragraphs after h3*/
@@ -55,7 +64,7 @@ h3{
 }
 
 .divider > section{
-    border-bottom: 1px dashed #343434; /*adds dashlines in between projects*/
+    border-bottom: 1px dashed #7453DE; /*adds dashlines in between projects*/
     padding: 25px 0; /*adds space between projects and the dash lines*/
 }
 
@@ -66,42 +75,57 @@ h3{
 .content-wrap h2~p{
     margin: 0;
 }
+
+ul li{
+    font-size: 20px;
+}
 /* Profile
 -----------------------------------*/
 header {
-    background: #111111;
-    color: #fff;
+    background: #F8F9FF;
+    color: #4120A9;
+    max-width: 2000px; /*having width only, crops the site if u adjust the width of the browser, maxwidth makes it adjust*/
+    width: 85%; /*if the browser gets too small, this makes sure there is still space*/
+    margin: 0 auto;
+    padding: 100px 0; /*adds padding to the top and bottom of the div containers to eliminate white space in between*/
 }
 
 .profilepic{
-    border-radius: 50%;
-    background: #fff;
-
+    position: relative;
+    top: 40px;
+    border-radius: 50%;;
+    width: 400px; 
 }
 
 .profile-box h1{
-    font-size:65px;
+    font-size:90px;
     text-align: center;
+    padding-bottom: -20px;
 }
 
 .profile-box h2{
+    padding-top: -10px;
     margin: 0%;
-    font-size: 25px;
+    font-size: 60px;
     text-align: center;
+    color:  #343434     ;
+}
+.profile-box p{
+    font-size: 30px;
+    padding-top: 25px;
+    color: #343434;
 }
 
 
 /* Courses/Certification
 -----------------------------------*/
-.courses{
-    background: #ffffff;
-}
 .courses a{
-    color: #111111;
+    color: #7453DE;
+    font-weight: 500;
 }
 .courses .btn{
-    color: #ffffff;
-    background: #111111;
+    color: #F8F9FF;
+    background: #7453DE;
     text-decoration: none; /*removes underline*/
     padding: 8px;
     border-radius: 4px; /*makes button round */
@@ -112,27 +136,31 @@ header {
     background: rgba(255, 255, 255, 1); /*used rgb to be able to modify opacity in 4th argument*/
 }
 .item-details a{
+    color: #7453DE;
     transition: ease-out 0.3s;
-    box-shadow: inset 0 0 0 0 #ffffff;
+    box-shadow: inset 0 0 0 0 #7453DE;
+    font-weight: 500;
 }
 
 .item-details a:hover{
-    box-shadow: inset 158px 0 0 0 #ffffff;
+    box-shadow: inset 250px 0 0 0 #4120A9;
     cursor: pointer;
-    color: #111111;
     background: rgba(255, 255, 255, 1);
 }
 
 .wlink{
+    color: #7453DE;
     transition: ease-out 0.3s;
-    box-shadow: inset 0 0 0 0 #111;
+    box-shadow: inset 0 0 0 0 #7453DE;
+    font-weight: 500;
+    clear: none;
 }
 
 .wlink:hover{
-    box-shadow: inset 158px 0 0 0 #111;
+    box-shadow: inset 200px 0 0 0 #7453DE;
     cursor: pointer;
-    color: #fff;
-    background: rgb(1, 1, 1);
+    color: #F8F9FF;
+    background: rgb(65, 32, 169);
 }
 .btn{
     cursor: pointer;
@@ -140,39 +168,35 @@ header {
 
 /* Work Experience
 -----------------------------------*/
-.work-experience{
-    background: #111111;
-}
-
-.work-experience a, .work-experience{
-    color: #ffffff;
-}
 
 
 
 /* Education
 -----------------------------------*/
 .education{
-    background: #ffffff;
+    background: #F8F9FF;
     padding-bottom: 80px;
+}
+.education h2{
+    color: #4120A9;
+    font-size: 60px;
 }
 
 .education p{
     width: 60%;
+    color: #3C3B3B;
+}
+
+.education ul li{
+    margin-top: 20px;
 }
 /* Contact Info
 -----------------------------------*/ 
-footer{
-    background: #111111 ;
-    color: #ffffff;
-}
-
-footer a{
-    color: #ffffff;
-}
 
 footer h2 {
-    font-size: 40px;
+    font-size: 60px;
+    padding-bottom: 10px;
+    color: #343434  ;
 }
 
 
@@ -193,8 +217,8 @@ footer h2 {
     padding: 15px 25px; /*makes it more accessible as there is now more area to click on the links, is the visible white circle*/
     display: inline-block; /*links are inline elements and we want them to adjust vertically and horizontally*/
     font-size: 35px; /*adjusts icon size*/
-    color: #111111;
-    background-color: #fff;
+    background-color: #7453DE;
+    color: #F8F9FF;
     margin: 0 30px; /*in between spacing*/
     border-radius: 50%;
     position: relative;
@@ -214,7 +238,7 @@ footer h2 {
     height: 100%;
     top: -90px;
     left: 0;
-    background: linear-gradient(-45deg, #ed1c94, #ffec17);
+    background: #4120A9;
     position: absolute;
     transition: 0.5s;
 }
@@ -224,7 +248,7 @@ footer h2 {
 }
 
 .contact-list a:hover .fa-brands, .contact-list a:hover .fa-solid{
-    color: #fff;
+    color: #F8F9FF;
 }
 
 .contact-list a:hover{
@@ -288,9 +312,12 @@ body ul li{
     }
 
     .profile-box{ /*grid container*/
-        display: grid;
-        grid-template-columns: 2fr 4fr;
-        column-gap: 55px;
+        position: relative;
+        left: -70px;
+        width: 1200px;
+        display: inline-grid;
+        grid-template-columns: 3fr 5fr;
+        place-items: center;
     }
 }
 
