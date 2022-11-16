@@ -180,7 +180,7 @@ header {
 
 .bar a .logo{
     position: relative;
-    left: -850px;
+    left: -1000px;
     width: 75px;
     cursor: pointer;
     margin-right: auto;
@@ -235,7 +235,7 @@ header {
 }
 
 .anibutton, .anilist, .anilista, .anilistb{
-    clear: none;
+    clear: none; /*removes linebreak for div containers, used div tags to encapsulate list items and anchor items to target with scrollrevealjs*/
 }
 
 /* Work Experience
@@ -371,11 +371,11 @@ footer h2 {
         width: 500px; 
     }
     .education ul li{
-        margin-top: 110px;
+        margin-top: 70px;
     }
     
     .education #adu{
-        margin-top: 60px;
+        margin-top: 30px;
     }
     .job-summary{
         padding-top: 40px;
