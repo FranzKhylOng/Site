@@ -90,7 +90,7 @@ header {
     max-width: 2000px; /*having width only, crops the site if u adjust the width of the browser, maxwidth makes it adjust*/
     width: 85%; /*if the browser gets too small, this makes sure there is still space*/
     margin: 0 auto;
-    padding: 100px 0 150px; /*adds padding to the top and bottom of the div containers to eliminate white space in between*/
+    padding: 100px 0 170px; /*adds padding to the top and bottom of the div containers to eliminate white space in between*/
 }
 
 .profilepic{
