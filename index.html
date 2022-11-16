@@ -6,6 +6,7 @@
     <title>Franz Khyl Ong</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/3a803a5f12.js" crossorigin="anonymous"></script> <!--for icons-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script defer src="app.js"></script> <!--fade in effect, defer makes sure it executes after html body-->
   </head>
   <body>
@@ -30,9 +31,9 @@
              </div>
              <div class="profile-info">
               <br>
-              <h1>Franz Khyl Ong</h1>
-               <h2>Computer Engineering Student</h2>
-               <p>A motivated computer engineering student seeking to establish his career utilizing his skills and passion in order to provide value and gain experience while continuing to learn every day</p>
+              <h1 class="name">Franz Khyl Ong</h1>
+               <h2 class="cpe">Computer Engineering Student</h2>
+               <p class="desc">A motivated computer engineering student seeking to establish his career utilizing his skills and passion in order to provide value and gain experience while continuing to learn every day</p>
               </div>
             </div>
         </div>
@@ -41,7 +42,7 @@
        <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
        <section class="education" id="educ">
         <div class="content-wrap  item-details bigger hidden">
-          <h2>Education</h2>
+          <h2 class="minititle">Education</h2>
 
           <!-- Copy this whole <section> block to add more schools. -->
           <section class="job-item">
@@ -77,8 +78,8 @@
  
       <section class="work-experience" id="work">
           <div class="content-wrap divider bigger hidden">
-            <h2>Work Experience</h2>
-            <p>See my complete work history on <a href="https://www.linkedin.com/in/franz-khyl-ong-925288190/" target="_blank" class="wlink">LinkedIn</a></p>
+            <h2 class="minititle">Work Experience</h2>
+            <p class="par">See my complete work history on <a href="https://www.linkedin.com/in/franz-khyl-ong-925288190/" target="_blank" class="wlink">LinkedIn</a></p>
             <!-- Copy this whole <section> block to add more jobs. -->
             <section class="job-item">
               <div class="job-details">
@@ -104,33 +105,33 @@
    
       <section class="courses" id="courses">
           <div class="content-wrap divider bigger hidden"> 
-            <h2>Courses/Certifications</h2>
-            <p>Courses I have taken in order to expand my knowledge. I am always willing to improve and learn something new! More courses & certifications can be found at <a href="https://www.linkedin.com/in/franz-khyl-ong" class="wlink" target="_blank">LinkedIn</a></p>
+            <h2 class="minititle">Courses/Certifications</h2>
+            <p class="par">Courses I have taken in order to expand my knowledge. I am always willing to improve and learn something new! More courses & certifications can be found at <a href="https://www.linkedin.com/in/franz-khyl-ong" class="wlink" target="_blank">LinkedIn</a></p>
 
             <!-- Copy the whole <section> block to add more projects. -->
             <section class="item-details">
               <h3>CSS Essential Training</h3>
               <p>November 2022</p>
               <p>LinkedIn Learning</p>
-              <a class="btn" href="https://drive.google.com/file/d/1gbOydtGOE1zktgP2o6uW0giDPzNASZnl/view?usp=sharing" target="_blank">View Certificate</a>
+              <div class="anibutton"><a class="btn" href="https://drive.google.com/file/d/1gbOydtGOE1zktgP2o6uW0giDPzNASZnl/view?usp=sharing" target="_blank">View Certificate</a></div>
             </section>
             <section class="item-details">
               <h3>HTML Essential Training</h3>
               <p>November 2022</p>
               <p>LinkedIn Learning</p>
-              <a class="btn" href="https://drive.google.com/file/d/1Rt_RNn11zjPCtCqSZpmxZ7q1dFWbK_Lo/view?usp=sharing" target="_blank">View Certificate</a>
+              <div class="anibutton"><a class="btn" href="https://drive.google.com/file/d/1Rt_RNn11zjPCtCqSZpmxZ7q1dFWbK_Lo/view?usp=sharing" target="_blank">View Certificate</a></div>
             </section>
             <section class="item-details">
               <h3>Python Data Science Toolbox (Part 1)</h3>
               <p>October 2022</p>
               <p>Datacamp</p>
-              <a class="btn" href="https://www.datacamp.com/statement-of-accomplishment/course/ddbe570f0f9ecb218c8232ab160398d38dd46dc6?share=true" target="_blank">View Certificate</a>
+              <div class="anibutton"><a class="btn" href="https://www.datacamp.com/statement-of-accomplishment/course/ddbe570f0f9ecb218c8232ab160398d38dd46dc6?share=true" target="_blank">View Certificate</a></div>
             </section>
             <section class="item-details">
               <h3>Intermediate Python</h3>
               <p>October 2022</p>
               <p>Datacamp</p>
-              <a class="btn" href="https://www.datacamp.com/statement-of-accomplishment/course/eee4873372225738d5f3c65cd01c89d65d5e0da8?share=true" target="_blank">View Certificate</a>
+              <div class="anibutton"><a class="btn" href="https://www.datacamp.com/statement-of-accomplishment/course/eee4873372225738d5f3c65cd01c89d65d5e0da8?share=true" target="_blank">View Certificate</a></div>
             </section>
             <!-- End of Project block. -->
         </div>
@@ -139,18 +140,41 @@
       <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
       <footer>
         <div class="content-wrap hidden" id="ct">
-          <h2 class>Let's Keep in Touch!</h2>
+          <h2 class="ctah">Let's Keep in Touch!</h2>
 
           <!-- Social media and contact links. Add or remove any networks. -->
           <ul class="contact-list">
-            <li><a href="mailto:FranzKhylM.Ong@gmail.com" target="_blank" ><i class="fa-solid fa-envelope" ></i></a></li>
-            <li><a href="https://www.linkedin.com/in/franz-khyl-ong-925288190/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://www.facebook.com/Franz.Khyl/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <div class="anilist"><li><a href="mailto:FranzKhylM.Ong@gmail.com" target="_blank" class="envelope" ><i class="fa-solid fa-envelope" ></i></a></li></div>
+            <div class="anilista"><li><a href="https://www.linkedin.com/in/franz-khyl-ong-925288190/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li></div>
+              <div class="anilistb"><li><a href="https://www.facebook.com/Franz.Khyl/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li></div>
           </ul>
         </div>
       </footer>
     </main>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> <!--for icon usage-->
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: '60px',
+        duration: 1000,
+      });
+      ScrollReveal().reveal('.name', {delay: 250, origin: 'top'});
+      ScrollReveal().reveal('.cpe', {delay: 250, origin: 'right'});
+      ScrollReveal().reveal('.desc', {delay: 250, origin: 'bottom'});
+      ScrollReveal().reveal('.profile-img', {delay: 250, origin: 'left'});
+      ScrollReveal().reveal('.job-details', {delay: 250, origin: 'left'});
+      ScrollReveal().reveal('.job-summary', {delay: 250, origin: 'right'});
+      ScrollReveal().reveal('.minititle', {delay: 250, origin: 'left'});
+      ScrollReveal().reveal('.par', {delay: 250, origin: 'right'});
+      ScrollReveal().reveal('.item-details', {delay: 250, origin: 'left'});
+      ScrollReveal().reveal('.courses .hidden .item-details .btn', {delay: 250, origin: 'right'});
+      ScrollReveal().reveal('.ctah', {delay: 250, origin: 'top'});
+      ScrollReveal().reveal('.anibutton', {delay: 250, origin: 'right'});
+      ScrollReveal().reveal('.anilist', {delay: 250, origin: 'bottom'});
+      ScrollReveal().reveal('.anilista', {delay: 300, origin: 'bottom'});
+      ScrollReveal().reveal('.anilistb', {delay: 350, origin: 'bottom'});
+    </script>
   </body>
 </html>

@@ -234,6 +234,10 @@ header {
     cursor: pointer;
 }
 
+.anibutton, .anilist, .anilista, .anilistb{
+    clear: none;
+}
+
 /* Work Experience
 -----------------------------------*/
 .work-experience p{
@@ -243,6 +247,7 @@ header {
 .work-experience{
     padding-top: 20px;
 }
+
 
 /* Education
 -----------------------------------*/
@@ -334,41 +339,7 @@ footer h2 {
     justify-content:center;
 }
 
-/* Hidden Animations
------------------------------------*/
-.hidden{
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
 
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
-@media(prefers-reduced-motion){
-    .hidden{
-        transition: none;
-    }
-}
-
-body ul li{
-    transition-duration: 800ms !important;
-}
-
-#testid{
-    transition-delay: 2000ms !important;
-
-}
-.contact-list:nth-child(2){
-    transition-delay: 400ms !important;
-}
-.contact-list:nth-child(3){
-    transition-delay: 600ms !important;
-}
 /* Responsive
 -----------------------------------*/ 
 @media screen and (min-width:750px){ /*for 750 px screens and above*/
@@ -405,6 +376,9 @@ body ul li{
     
     .education #adu{
         margin-top: 60px;
+    }
+    .job-summary{
+        padding-top: 40px;
     }
 }
 
