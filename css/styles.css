@@ -1,5 +1,9 @@
 /* Global Styles
 -----------------------------------*/
+@font-face {
+    font-family: 'Bebas';
+    src: url('/fonts/Bebas-Regular.ttf');
+}
 body{
     color: #343434; /*lighter dark*/
     margin: 0; /*to remove spacing to the left and right of the divs*/
